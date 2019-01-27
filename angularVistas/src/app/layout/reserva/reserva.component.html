@@ -1,0 +1,89 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<div [@routerTransition]>
+  <h1>Reserva.</h1>
+
+  <hr>
+  <div>
+    <form role="form">
+      <div class="form-content">
+        <th>
+          Nombre
+          <input type="text" pInputText class="form-control" size="70 " placeholder="Nombre quien reserva">
+        </th>
+      </div>
+
+      &nbsp;
+      &nbsp;
+
+      <th>
+        <div> Mesas </div>
+        <div>
+          <select id="lista " name="Prioridad" class="form-control">
+            <option value="Mesa para 2">Mesa para 2</option>
+            <option value="Mesa para 4">Mesa para 4</option>
+            <option value="Mesa Familiar 5">Mesa Familiar</option>
+          </select>
+        </div>
+      </th>
+
+      <th>
+        <div style="margin-left: 20px"> N° Personas </div>
+        <div style="margin-left: 20px">
+          <input type="number" class="form-control">
+        </div>
+      </th>
+
+      <th>
+        <div style="margin-left: 30px"> Tipo </div>
+        <div style="margin-left: 30px">
+
+          <body>
+            <select id="lista " name="lista" class="form-control">
+              <option value="Cita">Cita</option>
+              <option value="Reunion">Reunion</option>
+              <option value="Familiar">Familiar</option>
+            </select>
+          </body>
+        </div>
+      </th>
+
+      <th>
+        <div style="margin-left: 60px">Fecha</div>
+        <div style="margin-left: 60px">
+          <input class="form-control" type="date" name="fecha">
+        </div>
+      </th>
+
+      &nbsp;
+      &nbsp;
+
+      <div class="col-12">
+
+        <th>
+
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          &nbsp;
+
+          <button class="btn rounded-btn" [routerLink]="['/dashboard']"> Reservar </button>
+      </div>
+    </form>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>

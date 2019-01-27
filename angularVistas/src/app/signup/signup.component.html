@@ -1,0 +1,37 @@
+<div class="login-page" [@routerTransition]>
+    <div class="row justify-content-md-center">
+        <div class="col-md-4">
+            <img class="user-avatar" src="assets/images/descarga.png" width="150px" />
+            <h1>Ingrese sus datos</h1>
+            <form role="form" method='POST' action="../controladores/insertarUsuario.php" >
+                <div class="form-content">
+                    <div class="form-group">
+                        <input type="text" class="form-control input-underline input-lg" name="name" placeholder="Apellidos y Nombres">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control input-underline input-lg" name="cedula" placeholder="Número de Identificación">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control input-underline input-lg" name="telefono" placeholder="Teléfono/Celular +593">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" class="form-control input-underline input-lg" name="email" placeholder="Correo Electrónico">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control input-underline input-lg" name="password" placeholder="Contraseña">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control input-underline input-lg" name="password1" placeholder="Repetir Contraseña">
+                    </div>
+                </div>
+                <a class="btn rounded-btn" [routerLink]="['/login']">Registrarse</a>&nbsp;
+                <a class="btn rounded-btn" [routerLink]="['/dashboard']" (click)="onLoggedin()">Volver a Inicio</a>
+                <hr>
+            </form>
+        </div>
+    </div>
+</div>
