@@ -1,7 +1,7 @@
 <div class="login-page" [@routerTransition]>
     <div class="row justify-content-md-center">
         <div class="col-md-4">
-            <img class="user-avatar" src="assets/images/descarga.png" width="150px" />
+            <img class="row justify-content-md-center" src="assets/images/descarga.png" width="150px" />
             <h1>Ingrese sus datos</h1>
             <form role="form" method='POST' action="../controladores/insertarUsuario.php" >
                 <div class="form-content">
@@ -28,8 +28,8 @@
                         <input type="password" class="form-control input-underline input-lg" name="password1" placeholder="Repetir Contraseña">
                     </div>
                 </div>
-                <a class="btn rounded-btn" [routerLink]="['/login']">Registrarse</a>&nbsp;
-                <a class="btn rounded-btn" [routerLink]="['/dashboard']" (click)="onLoggedin()">Volver a Inicio</a>
+                <input type="submit"  name=""class="form-submit" value="Registrarse" [routerLink]="['/login']"/>&nbsp;
+                <a class="btn rounded-btn" [routerLink]="['/dashboard']" class="form-submit"  (click)="onLoggedin()">Inicio </a>
                 <hr>
             </form>
         </div>

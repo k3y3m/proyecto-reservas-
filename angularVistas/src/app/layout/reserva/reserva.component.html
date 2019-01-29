@@ -1,66 +1,81 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <div [@routerTransition]>
-  <h1>Reserva.</h1>
-
+  <h1>Reserva</h1>
+  <img src="../assets/images/03.jpg" class="img-circle" alt="Cinque Terre" style="width:200px;height:150px;">
   <hr>
   <div>
+    <div>
+        <h1>ASIENTOS</h1>
+        <form class="auto-style1">
+            <tr id="">
+                <td class="auto-style3">A</td>
+                <td class="auto-style14">
+                    1<img alt="" src="../assets/images/05.jpg" style="height: 29px; width: 35px" /></td>
+                <td class="auto-style15">
+                    2<img alt="" src="../assets/images/05.jpg" style="height: 29px; width: 35px" /></td>
+                <td class="auto-style15">
+                  <td>
+                    3<img alt="" src="../assets/images/05.jpg" style="height: 29px; width: 35px" /></td>
+                <td class="auto-style15">
+                    4<img alt="" src="../assets/images/05.jpg" style="height: 29px; width: 35px" /></td>
+                <td class="auto-style15">
+                  </td>
+            </tr>
+            <tr id="">
+                <td class="auto-style3">B</td>
+                <td class="auto-style14">
+                    5<img alt="" src="../assets/images/05.jpg" style="height: 25px; width: 34px" /></td>
+                <td class="auto-style14">
+                    6<img alt="" src="../assets/images/05.jpg" style="height: 25px; width: 34px" /></td>
+                <td class="auto-style14">
+                    <td>
+                    7<img alt="" src="../assets/images/05.jpg" style="height: 25px; width: 34px" /></td>
+                <td class="auto-style14">
+                    8<img alt="" src="../assets/images/05.jpg" style="height: 25px; width: 34px" /></td>
+                <td class="auto-style14">
+                  </td>
+             </tr>
+             <tr id="">
+                <td class="auto-style3">C</td>
+                <td class="auto-style14">
+                    9<img alt="" src="../assets/images/05.jpg" style="height: 25px; width: 34px" /></td>
+                <td class="auto-style14">
+                    10<img alt="" src="../assets/images/05.jpg" style="height: 25px; width: 34px" /></td>
+                <td class="auto-style14">
+                    <td>
+                    11<img alt="" src="../assets/images/05.jpg" style="height: 25px; width: 34px" /></td>
+                <td class="auto-style14">
+                    12<img alt="" src="../assets/images/05.jpg" style="height: 25px; width: 34px" /></td>
+                <td class="auto-style14">
+                  </td>
+             </tr>
+             <tr id="">
+                <td class="auto-style3">C</td>
+                <td class="auto-style14">
+                    13<img alt="" src="../assets/images/05.jpg" style="height: 25px; width: 34px" /></td>
+                <td class="auto-style14">
+                    14<img alt="" src="../assets/images/05.jpg" style="height: 25px; width: 34px" /></td>
+                <td class="auto-style14">
+                    <td>
+                    15<img alt="" src="../assets/images/05.jpg" style="height: 25px; width: 34px" /></td>
+                <td class="auto-style14">
+                    16<img alt="" src="../assets/images/05.jpg" style="height: 25px; width: 34px" /></td>
+                <td class="auto-style14">
+                  </td>
+             </tr>           
+            </form>
+    </div>
     <form role="form">
-      <div class="form-content">
-        <th>
-          Nombre
-          <input type="text" pInputText class="form-control" size="70 " placeholder="Nombre quien reserva">
-        </th>
-      </div>
-
-      &nbsp;
-      &nbsp;
-
-      <th>
-        <div> Mesas </div>
-        <div>
-          <select id="lista " name="Prioridad" class="form-control">
-            <option value="Mesa para 2">Mesa para 2</option>
-            <option value="Mesa para 4">Mesa para 4</option>
-            <option value="Mesa Familiar 5">Mesa Familiar</option>
-          </select>
-        </div>
-      </th>
-
-      <th>
-        <div style="margin-left: 20px"> N° Personas </div>
-        <div style="margin-left: 20px">
-          <input type="number" class="form-control">
-        </div>
-      </th>
-
-      <th>
-        <div style="margin-left: 30px"> Tipo </div>
-        <div style="margin-left: 30px">
-
-          <body>
-            <select id="lista " name="lista" class="form-control">
-              <option value="Cita">Cita</option>
-              <option value="Reunion">Reunion</option>
-              <option value="Familiar">Familiar</option>
-            </select>
-          </body>
-        </div>
-      </th>
-
       <th>
         <div style="margin-left: 60px">Fecha</div>
         <div style="margin-left: 60px">
           <input class="form-control" type="date" name="fecha">
         </div>
       </th>
-
       &nbsp;
       &nbsp;
-
+      <th>
       <div class="col-12">
-
-        <th>
-
           <br>
           <br>
           <br>
@@ -78,9 +93,10 @@
           &nbsp;
           &nbsp;
           &nbsp;
-
-          <button class="btn rounded-btn" [routerLink]="['/dashboard']"> Reservar </button>
-      </div>
+          <input type="submit" class="btn rounded-btn" value="Reservar" [routerLink]="['/dashboard']" />
+       
+        </div>
+        </th>
     </form>
   </div>
 </div>
