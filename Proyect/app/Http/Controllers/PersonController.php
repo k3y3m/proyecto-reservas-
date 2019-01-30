@@ -15,7 +15,7 @@ class PersonController extends Controller
         return $response;
 
     }
-
+  
     public function createPerson(Request $request)
     {
         $data = $request -> json() -> all();

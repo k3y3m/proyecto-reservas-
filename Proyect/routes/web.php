@@ -14,7 +14,7 @@
 $router->get('/', function () use ($router) {
     return $router -> app -> version();
 });
-
+ 
 //persona
 $router->post('/person', ['uses' => 'PersonController@createPerson']);
 $router->put('/person', ['uses' => 'PersonController@updatePerson']);
